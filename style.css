@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff8f2;
+  color: #4a3f3f;
+  line-height: 1.6;
+}
+
+/*LINKS AND BUTTONS*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #b55b70;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn:hover {
+  background-color: #d46f89;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #b55b70;
+  color: #b55b70;
+}
+
+.btn.outline:hover {
+  background-color: #b55b70;
+  color: #fff;
+}
+
+/*HEADER AND NAVIGATION*/
+
+.site-header {
+  background: linear-gradient(to right, #f7d9e3, #fff8f2);
+  padding: 20px 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  color: #b55b70;
+}
+
+.logo .sub {
+  font-size: 0.9rem;
+  color: #6d5d5d;
+}
+
+.main-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  color: #4a3f3f;
+  font-weight: 500;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.current {
+  color: #b55b70;
+}
+
+
+/*INTRO SECTION*/
+
+.intro {
+  background: url(mystyle/mypics/background-cover.jpg) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 10%;
+  background-color: #fdeef3;
+  gap: 40px;
+}
+
+.intro-image {
+  width: 340px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.intro-text {
+  max-width: 500px;
+}
+
+.intro-text h2 {
+  font-family: "Playfair Display", serif;
+  color: #b55b70;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  margin-bottom: 20px;
+  color: #5c4b51;
+}
+
+/*INTRO CARDS*/
+
+.intro-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 5%;
+  gap: 25px;
+  background: #fff;
+}
+
+.card {
+  background-color: #fff8f2;
+  border: 1px solid #f1c6d0;
+  border-radius: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  flex: 1 1 280px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #b55b70;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+}
+
+/* Featured Section*/
+
+.featured {
+  background: url(mystyle/mypics/background-cover.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 10%;
+  background-color: #fdeef3;
+}
+
+.featured-left, .featured-right {
+  flex: 1 1 300px;
+}
+
+.polaroid {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  transform: rotate(-2deg);
+  text-align: center;
+  width: 250px;
+  margin: auto;
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: #6b5a5a;
+  margin-top: 5px;
+}
+
+/*ABOUT*/
+
+.about-wrapper {
+  background: url(mystyle/mypics/background-cover.jpg) no-repeat center center/cover;
+  padding: 60px 10%;
+}
+
+.about-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-photo {
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+  color: #b55b70;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 15px;
+}
+
+.bio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.bio-card {
+  flex: 1 1 250px;
+  background-color: #fff8f2;
+  border: 1px solid #f1c6d0;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.fun-facts {
+  margin-top: 60px;
+}
+
+.fun-facts h3 {
+  color: #b55b70;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 15px;
+}
+
+.fun-facts ul {
+  list-style-type: circle;
+  margin-left: 25px;
+  color: #5c4b51;
+}
+
+/* GALLERY*/
+
+.gallery-main {
+  background: url(mystyle/mypics/background-cover.jpg) no-repeat center center/cover;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.gallery-intro h2 {
+  font-family: "Playfair Display", serif;
+  color: #b55b70;
+  margin-bottom: 10px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.photo-polaroid {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transform: rotate(-1.5deg);
+  transition: 0.3s;
+}
+
+.photo-polaroid:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+.photo-polaroid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.photo-polaroid figcaption {
+  font-size: 0.85rem;
+  color: #6b5a5a;
+  margin-top: 8px;
+}
+
+/* MUSIC */
+.music-section { 
+  background: url(mystyle/mypics/background-cover.jpg) no-repeat center center/cover;
+  color: #5a4635;
+  padding: 40px 20px 20px 40px;
+  text-align: center;
+  border-radius: 20px
+}
+.music-container {
+  display: flex;          
+  flex-direction: row;    
+  justify-content: center;  
+  align-items: flex-start; 
+  gap: 20px;           
+  flex-wrap: wrap;        
+  margin-top: 20px;
+}
+.music-card {
+  background: linear-gradient(160deg,#ffc2d1,#e0dada);
+  border-radius: 20px;
+  max-width: 200px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+.music-cover {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 15px;
+}
+.music-title { 
+  color: #5a4635;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.music-artist {
+  color: #5a4635;
+  opacity: 0.8;
+  margin: 5px 0 15px;
+}
+.music-player {
+  width: 100%;
+  outline: none;
+  border-radius: 30px;
+}
+.music-player::-webkit-media-controls-panel {
+  background-color: #c28e8d;
+  border-radius: 30px;
+}
+.music-player::-webkit-media-controls-play-button,
+.music-player::-webkit-media-controls-pause-button {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/*FOOTER*/
+
+.site-footer {
+  text-align: center;
+  background-color: #f7d9e3;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #4a3f3f;
+  margin-top: 60px;
+}
